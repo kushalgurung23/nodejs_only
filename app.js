@@ -13,9 +13,16 @@
 // 2. npm init (step by step, press enter to skip)
 // 3. npm init -y (everything default)
 
+// DEV DEPENDENCY: npm i nodemon -D
+
+// UNINSTALL DEPENDENCY. WE CAN DO FROM TWO METHODS:
+// 1. npm uninstall bootstrap
+// 2. delete package-lock.json, remove dependency(ex-bootstrap) from package.json, and write npm install in command
+
 const _ = require('lodash');
 const items = [1, [2, [3, [4]]]];
 const newItems = _.flattenDeep(items);
 console.log(newItems);
+console.log("Hello chelsea");
 
-// 2:02:56
+// 2:29:36

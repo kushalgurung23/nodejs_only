@@ -1,5 +1,7 @@
 const http = require('http');
 
+// request object represents what is coming in
+// response object represents what we are sending out
 const server = http.createServer((req, res) => {
     if(req.url === '/') {
         res.end('Welcome to our home page')
@@ -15,4 +17,10 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(5000);
+// OR
+
+server.on('request', (req, res) => {
+    res.end('welcome');
+})
+
+server.listen(3000);
